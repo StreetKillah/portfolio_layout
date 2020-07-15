@@ -1,0 +1,189 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+body{
+    font-family: Larsseit;
+    font-weight: bold;
+    background-color: #F4F9E2;
+    overflow-x: hidden;
+
+}
+
+
+.header{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1010px;
+    position: relative;
+    margin-bottom: 75px;
+    /*--------------------------------------------------N A V B A R-------------------------------------------------------------*/
+
+    .navbar{
+        position: relative;
+        z-index: 0;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            font-size: 24px;
+            color: #62D0DF;
+        }
+
+        li:nth-child(1){
+            width: 55px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        li .underline{
+            position: static;
+            width: 50px;
+            height: 5px;
+            top: 62px;
+            background: #F4F9E2;
+            box-shadow: inset 0px -1px 0px #22356F;
+        }
+        ul{
+            width: 233px;
+            font-size: 14px;
+            color:#22356F;
+            font-weight: normal;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+        }
+        .contact_button{
+            position: sticky;
+            width: 150px;
+            height: 50px;
+            left: 1159px;
+            top: 27px;
+            color: white;
+            background: #62D0DF;
+            border-radius: 50px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    /*-----------------------------------------------C O N T E N T---------------------------------------------*/
+   .header__content{
+       margin-top: 164px;
+       width: 484px;
+       height: 420px;
+       display: flex;
+       position: relative;
+       z-index: 4;
+       .header__typo{
+           display:flex;
+           flex-direction: column;
+           justify-content: space-between;
+       }
+       h3{
+        color: #62D0DF;
+        font-size: 23px;
+       }
+       .header__title{
+        color: #22356F;
+        font-size: 48px;
+        font-weight: bold;
+       }
+       span{
+        line-height: 45px;
+        color: #22356F;
+        font-size: 23px;
+        font-weight: normal;
+       }
+       .header__images{
+           position: relative;
+           right: -40px;
+           top: -260px;
+   
+       }
+       .header__images img:nth-child(1){
+        position: absolute;
+        opacity: 0.4;
+       }
+
+       .header__images img:nth-child(2){
+           position: absolute;
+       }
+
+       .header__buttons{
+           display: flex;
+       }
+       
+       .who_am_i{
+        width: 150px;
+        height: 50px;
+        left: 179px;
+        top: 715px;
+        background: #F9B640;
+        text-align: center;
+        span{
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+
+        }
+       }
+
+       .who_do_i_do{
+        width: 150px;
+        height: 50px;
+        margin-right: 38px;
+        left: 179px;
+        top: 715px;
+        background:  #F4F9E2;
+        text-align: center;
+        span{
+            color:#F9B640;
+            font-size: 16px;
+            font-weight: bold;
+
+        }
+       }
+
+   }
+
+}
+   /*----------------------------------------------------A B O U T-----------------------------------------------------------------------*/
+ 
+   .about{
+       background-color: #62D0DF;
+       color:white;
+       display: flex;
+       .about__content{
+           margin-left: auto;
+           margin-right: auto;
+           margin-top: 181px;
+           max-width: 555px;
+           .about__title{
+               margin-bottom: 75px;
+               font-size: 36px;
+               font-weight: bold;
+           }
+           .about__typo{
+            line-height: 30px;
+               span{
+                   font-weight: bold;
+                   font-size: 24px;
+               }
+               font-weight: normal;
+               font-size:20px;
+           }
+       }
+   }
+
+
+
+
+
+
+@import "media";
