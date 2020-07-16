@@ -319,7 +319,7 @@ body{
        .act{
            display:flex;
            flex-direction: column;
-           align-items: center;
+          
        }
        .physical{
         background-color: #22356F;
@@ -330,10 +330,14 @@ body{
         line-height: 29px;
         letter-spacing: -0.006em;
         .help__rect{
+            align-self: center;
             width: 340px;
             height: 72px;
             background: #22356F;
             box-shadow: inset 0px -1px 0px #FFFFFF;
+           }
+           span{
+               margin-left: 85px;
            }
    }
      .mental{
@@ -344,25 +348,34 @@ body{
         line-height: 29px;
         letter-spacing: -0.006em;
         .help__rect{
+            align-self: center;
             width: 340px;
             height: 72px;
             background: #0052C1;
             box-shadow: inset 0px -1px 0px #FFFFFF;
            }
+           span{
+            margin-left: 85px;
+        }
     }
      .nutrition{
         background-color: #22356F;
-   
+        background-image: url('../img/joanna-kosinska-340748.png');
+        background-size: 510px ;
         font-weight: bold;
         font-size: 32px;
         line-height: 29px;
         letter-spacing: -0.006em;
         .help__rect{
+            margin-top: 72px;
+            align-self: center;
             width: 340px;
-            height: 72px;
-            background: #22356F;
-            box-shadow: inset 0px -1px 0px #FFFFFF;
+            height: 1px;
+            background:  #FFFFFF;
            }
+           span{
+            margin-left: 85px;
+        }
     }
     .gymnastics{
         background-color: #62D0DF;
@@ -372,11 +385,15 @@ body{
         line-height: 29px;
         letter-spacing: -0.006em;
         .help__rect{
+            align-self: center;
             width: 340px;
             height: 72px;
             background: #62D0DF;
             box-shadow: inset 0px -1px 0px #FFFFFF;
            }
+           span{
+            margin-left: 85px;
+        }
     }
      .crossfit{
         background-color: #DEE1FF;
@@ -386,11 +403,15 @@ body{
         line-height: 29px;
         letter-spacing: -0.006em;
         .help__rect{
+            align-self: center;
             width: 340px;
             height: 72px;
             background: #DEE1FF;
             box-shadow: inset 0px -1px 0px #FFFFFF;
            }
+           span{
+            margin-left: 85px;
+        }
     }
      .aerobics{
         background-color: #8F00FF;
@@ -400,12 +421,49 @@ body{
         line-height: 29px;
         letter-spacing: -0.006em;
         .help__rect{
+            align-self: center;
             width: 340px;
             height: 72px;
             background: #8F00FF;
             box-shadow: inset 0px -1px 0px #FFFFFF;
            }
+           span{
+            margin-left: 85px;
+        }
     }
    }
+
+    /*-------------------------------------------------W H I T E  B L O C K S--------------------------------------------------------------*/
+
+    .white__blocks{
+        margin-top: 20px;
+    }
+    .white__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 2fr;    
+        .white__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span:nth-child(1){
+                margin-top: 119px;
+                font-size: 28px;
+                line-height: 33px;
+                letter-spacing: -0.03em;
+                color: #22356F;
+            }
+            span:nth-child(2){
+                margin-top: 28px;
+                width: 298px;
+                font-size: 16px;
+                line-height: 25px;
+                letter-spacing: -0.03em;
+                color: rgba(34, 53, 111, 0.5);
+            }
+        }    
+
+    }
+    
   
 @import "media";
