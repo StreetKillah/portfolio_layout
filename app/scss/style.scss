@@ -181,9 +181,231 @@ body{
        }
    }
 
+    /*----------------------------------------------------A B O U T  U S-----------------------------------------------------------------------*/
+
+   .about_us{
+    color: #22356F;
+     .about_us_wrapper{
+         margin-top: 150px;
+         margin-left: 106px;
+         max-width: 910px;
+         display: flex;
+         span:nth-child(1){
+             white-space: nowrap;
+             margin-right: 225px;
+             font-size: 16px;
+             line-height: 24px;
+             letter-spacing: 0.06em;
+             font-weight: normal;
+         }
+         span:nth-child(2){
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.005em;
+         }
+     }
+   }
+
+    /*--------------------------------------------------H E L P  S C R E E N-------------------------------------------------------------*/
+   .help__screen{
+       margin-top: 75px;
+       text-align: center;
+       span{
+        margin-bottom: 211px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.06em;
+        color: rgba(34, 53, 111, 0.5);
+       }
+       .help__items{
+           margin-top: 24px;
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
+       }
+
+       .help__rect{
+           margin-bottom: 30px;
+       }
+
+    
+       .help__items .weight{
+           background-color: #FFE2DE;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           span{
+            color:white;
+            font-size: 32px;
+            line-height: 29px;
+            letter-spacing: -0.006em;
+            }
+           .help__rect{
+            width: 255px;
+            height: 72px;
+            background: #FFE2DE;
+            box-shadow: inset 0px -1px 0px #FFFFFF;
+           }
+       }
+       .help__items .running{
+        background-color:  #C4E769;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span{
+            color:white;
+            font-size: 32px;
+            line-height: 29px;
+            letter-spacing: -0.006em;
+        }
+        .help__rect{
+            width: 255px;
+            height: 72px;
+            background: #C4E769;
+            box-shadow: inset 0px -1px 0px #FFFFFF;
+           }
+        }
+        .help__items .pumping{
+            background-color: #62D0DF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span{
+                color:white;
+                font-size: 32px;
+                line-height: 29px;
+                letter-spacing: -0.006em;
+            }
+            .help__rect{
+                width: 255px;
+                height: 72px;
+                background: #62D0DF;
+                box-shadow: inset 0px -1px 0px #FFFFFF;
+               }
+        }
+        .help__items .upgrade{
+            background-color: #0052C1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            span{
+                color:white;
+                font-size: 32px;
+                line-height: 29px;
+                letter-spacing: -0.006em;
+            }
+            .help__rect{
+                width: 255px;
+                height: 72px;
+                background: #0052C1;
+                box-shadow: inset 0px -1px 0px #FFFFFF;
+               }
+        }
+
+   }
 
 
+   /*----------------------------------------------A C T I V I T I E S  S C R E E N--------------------------------------------------------------*/
+   .activities{
+       margin-top: 120px;
+   }
+   .act__wrapper{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 2fr 2fr;
+       color: white;
+       .act{
+           display:flex;
+           flex-direction: column;
+           align-items: center;
+       }
+       .physical{
+        background-color: #22356F;
+        padding-bottom: 282px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 29px;
+        letter-spacing: -0.006em;
+        .help__rect{
+            width: 340px;
+            height: 72px;
+            background: #22356F;
+            box-shadow: inset 0px -1px 0px #FFFFFF;
+           }
+   }
+     .mental{
+        background-color: #0052C1;
+    
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 29px;
+        letter-spacing: -0.006em;
+        .help__rect{
+            width: 340px;
+            height: 72px;
+            background: #0052C1;
+            box-shadow: inset 0px -1px 0px #FFFFFF;
+           }
+    }
+     .nutrition{
+        background-color: #22356F;
+   
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 29px;
+        letter-spacing: -0.006em;
+        .help__rect{
+            width: 340px;
+            height: 72px;
+            background: #22356F;
+            box-shadow: inset 0px -1px 0px #FFFFFF;
+           }
+    }
+    .gymnastics{
+        background-color: #62D0DF;
+ 
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 29px;
+        letter-spacing: -0.006em;
+        .help__rect{
+            width: 340px;
+            height: 72px;
+            background: #62D0DF;
+            box-shadow: inset 0px -1px 0px #FFFFFF;
+           }
+    }
+     .crossfit{
+        background-color: #DEE1FF;
 
-
-
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 29px;
+        letter-spacing: -0.006em;
+        .help__rect{
+            width: 340px;
+            height: 72px;
+            background: #DEE1FF;
+            box-shadow: inset 0px -1px 0px #FFFFFF;
+           }
+    }
+     .aerobics{
+        background-color: #8F00FF;
+  
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 29px;
+        letter-spacing: -0.006em;
+        .help__rect{
+            width: 340px;
+            height: 72px;
+            background: #8F00FF;
+            box-shadow: inset 0px -1px 0px #FFFFFF;
+           }
+    }
+   }
+  
 @import "media";
