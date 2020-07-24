@@ -3,6 +3,8 @@
 @import "fonts";
 
 body{
+    padding: 0;
+    margin: 0;
     font-family: Larsseit;
     font-weight: bold;
     background-color: #F4F9E2;
@@ -15,21 +17,29 @@ body{
     margin-left: auto;
     margin-right: auto;
     max-width: 1010px;
-    position: relative;
     margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     /*--------------------------------------------------N A V B A R-------------------------------------------------------------*/
-
+   
     .navbar{
-        position: relative;
-        z-index: 0;
-        margin-top: 30px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        h1{
+        .header__logo{
             font-size: 24px;
             color: #62D0DF;
+            z-index: 3;
         }
+
+        // .header__burger{
+        //     display: none;
+        // }
 
         li:nth-child(1){
             width: 55px;
@@ -48,38 +58,61 @@ body{
             box-shadow: inset 0px -1px 0px #22356F;
         }
         ul{
-            width: 233px;
+            width: 550px;
             font-size: 14px;
             color:#22356F;
             font-weight: normal;
             display: flex;
             justify-content: space-between;
             list-style-type: none;
+            li{
+                align-self: center;
+                margin: 0 0 0 20px;
+            }
+            .contact_button{
+                margin-left: 100px;
+                width: 150px;
+                height: 50px;
+                left: 1159px;
+                top: 27px;
+                color: white;
+                background: #62D0DF;
+                border-radius: 50px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
-        .contact_button{
-            position: sticky;
-            width: 150px;
-            height: 50px;
-            left: 1159px;
-            top: 27px;
-            color: white;
-            background: #62D0DF;
-            border-radius: 50px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+        
+    }
+
+    .navbar::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        
+    }
+
+    nav{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        height: 80px; 
     }
 
     /*-----------------------------------------------C O N T E N T---------------------------------------------*/
    .header__content{
        margin-top: 164px;
-       width: 484px;
+       max-width: 484px;
        height: 420px;
        display: flex;
-       position: relative;
-       z-index: 4;
+       
        .header__typo{
            display:flex;
            flex-direction: column;
@@ -108,7 +141,7 @@ body{
        }
        .header__images img:nth-child(1){
         position: absolute;
-        opacity: 0.4;
+        opacity: 0.2;
        }
 
        .header__images img:nth-child(2){
@@ -152,6 +185,7 @@ body{
 
    }
 
+  
 }
    /*----------------------------------------------------A B O U T-----------------------------------------------------------------------*/
  
