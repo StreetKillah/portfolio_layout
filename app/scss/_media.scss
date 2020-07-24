@@ -1,5 +1,10 @@
 @media (max-width:767px){
-    .body.lock{
+    body{
+        padding: 0;
+        margin: 0;
+    }
+
+    body.lock{
         overflow: hidden;
     }
     .header{
@@ -58,6 +63,11 @@
         height: 100%;
     }
 
+    .header__images{
+        display: none;
+    }
+   
+
     /*------------------------------------------------------НАЖАЛИ НА БУРГЕР---------------------------------------------------------*/
     .header__burger.active{
         top: 25px;
@@ -96,10 +106,115 @@
           display: flex;
           justify-content: space-between;
           flex-direction: column;
+          font-size: 20px;
           .contact_button{
               margin-left: 200px;
             }
         }
     }
 
+/*---------------------------------------------------------A B O U T---------------------------------------------------------------------------*/
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .about img{
+            max-width: 100%;
+    }
+
+/*---------------------------------------------------------A B O U T  U S-----------------------------------------------------------------------*/
+
+.about_us_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    span:nth-child(2){
+        margin-top: 50px;
+    }
 }
+
+/*---------------------------------------------------------A B O U T  U S-----------------------------------------------------------------------*/
+.help__items{
+    display: grid;
+    grid-template-rows: 4fr 4fr;
+    grid-template-columns: 4fr 4fr;
+    .help_item{
+        max-width: 100%;
+        font-size: 20px;
+    }
+}
+
+
+/*-----------------------------------------------------A C T I V I T I E S-----------------------------------------------------------------------*/
+.act__wrapper{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    .act{
+        max-width: 100%;
+    }
+}
+
+/*---------------------------------------------W H I T E  B L O C K S----------------------------------------------------------------------*/
+.white__wrapper{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
+}
+
+/*---------------------------------------------S T A T I S T I C S----------------------------------------------------------------------*/
+    .statistics{
+        display: flex;
+        flex-direction: column;
+        .stat__typo{
+            span:nth-child(2){
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    .statistics img{
+        max-width: 100%;
+    }
+
+/*---------------------------------------------S U G G E S T I O N----------------------------------------------------------------------*/
+.suggestion{
+    display: flex;
+    flex-direction: column;
+    img{
+        max-width: 100%;
+    }
+    .suggest__typo{
+        span:nth-child(2){
+            margin-top: 30px;
+            font-size: 30px;
+            line-height: 25px;
+        }
+        span:nth-child(3){
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 20px;
+            line-height: 25px;
+        }
+       
+    }
+}
+
+/*----------------------------------------------------------I N F O----------------------------------------------------------------------*/
+.info__screen{
+    display: flex;
+    flex-direction: column;
+}
+
+.info__screen img{
+    max-width: 100%;
+}
+
+}
+
+
